@@ -1,6 +1,9 @@
-Abrimos PowerShell para crear un contenedor de docker
-Realizamos el siguiente comando docker pull nginx
+Abrimos PowerShell para verificar la version de docker para trabajar: docker --version
+Descargamos la imagen oficial de Nginx con el siguiente comando:  docker pull nginx
+Para levantar la imagen usamos: docker build -t nginx
 Hacemos correr Nginx: docker run --name web -d -p 8080:80 nginx
+Para confirmar que el contenedor se ha levantado usamos: docker ps
+Verificamos que nginx este corriendo de manera local a traves de localhost
 Iniciamos sesion en nuestra cuenta de GitHub
 Creamos un nuevo Repositorio para la pregunta 1
 Iniciamos git init
